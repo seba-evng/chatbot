@@ -1,53 +1,51 @@
-> Edited for use in IDX on 07/09/12
+# 🤖 Gemini Chat - Chatbot con IA
 
-# Welcome to your Expo app 👋
+Una aplicación móvil moderna de chat construida con React Native, Expo y Google Gemini AI. Interfaz elegante con diseño glassmorphism y gradientes vibrantes.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## ✨ Características
 
-## Get started
+- 💬 **Chat en tiempo real** con Google Gemini AI
+- 🎨 **Diseño moderno** con efectos glassmorphism y gradientes
+- 🌓 **Interfaz intuitiva** con animaciones suaves
+- ⚡ **Respuestas rápidas** utilizando Gemini 2.0 Flash
+- 📱 **Multiplataforma** (iOS y Android)
+- 🔒 **Seguro** con variables de entorno para API keys
+- 💾 **Sin persistencia** - conversaciones privadas que no se guardan
 
-#### Android
+## 📁 Estructura del Proyecto
 
-Android previews are defined as a `workspace.onStart` hook and started as a vscode task when the workspace is opened/started.
-
-Note, if you can't find the task, either:
-- Rebuild the environment (using command palette: `IDX: Rebuild Environment`), or
-- Run `npm run android -- --tunnel` command manually run android and see the output in your terminal. The device should pick up this new command and switch to start displaying the output from it.
-
-In the output of this command/task, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You'll also find options to open the app's developer menu, reload the app, and more.
-
-#### Web
-
-Web previews will be started and managred automatically. Use the toolbar to manually refresh.
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+gemini-chatbot/
+├── app/
+│   ├── components/
+│   │   ├── ChatHeader.tsx       # Header del chat
+│   │   ├── ChatInput.tsx        # Input de mensajes
+│   │   └── MessageBubble.tsx    # Burbujas de mensaje
+│   ├── screens/
+│   │   ├── WelcomeScreen.tsx    # Pantalla de bienvenida
+│   │   └── ChatScreen.tsx       # Pantalla principal del chat
+│   ├── services/
+│   │   └── geminiService.ts     # Servicio de API de Gemini
+│   ├── types/
+│   │   └── types.ts             # Tipos e interfaces TypeScript
+│   ├── _layout.tsx              # Layout de navegación
+│   └── index.tsx                # Punto de entrada
+├── .env                         # Variables de entorno (no commitear)
+├── .gitignore
+├── app.json
+├── babel.config.js
+├── global.css                   # Estilos globales de Tailwind
+├── package.json
+├── tailwind.config.js
+├── tsconfig.json
+└── README.md
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 📱 Ejemplo de la App
 
-## Learn more
+![Image](https://github.com/user-attachments/assets/04825ace-9b0f-44ba-9c0d-b7fdc7d9ad71)
 
-To learn more about developing your project with Expo, look at the following resources:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+⭐ Si te gusta este proyecto, dale una estrella en GitHub!
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+**Hecho con ❤️ y ☕**
